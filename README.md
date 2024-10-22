@@ -1,40 +1,65 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+<h1>Modern Full Stack ECommerce Application with Stripe & Sanity</h1>
+👉 Check out for Live Website: <a href="https://ecommerce-psi-six-78.vercel.app/">E-commerce App</a>
 
-First, run the development server:
+<h2>Project Summary</h2>
+<p>ECommerce Application which uses <strong>React, Next.Js, Stripe & Sanity</strong> - from start to finish. </p>
+<p>Sanity is used as a Content Management Cloud for this project. Database, and content management handled by Sanity.</p>
+<p>Stripe is used as Payment Management for this project.</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+<h2>Project Features</h2>
+<ul>
+<li><strong>Products layout page:</strong> Header and footer with highlighted sale product.</li>
+<li><strong>Product detail page:</strong> Users can see the price and product's details. Additionally, alternative similar product recommendations can be accessed by navigating to related products.</li>
+<li><strong>Sidebar cart:</strong> Show and calculate all products in the cart and navigate to the payment page.</li>
+<li><strong>Payment Page with Stripe:</strong> Product, shipment, total and payment details.   </li>
+</ul>
+
+<h2>Look at Project</h2>
+<img width="1677" alt="ProjectView1" src="https://github.com/user-attachments/assets/b8179cf4-5b0c-41cc-a152-c39c1da4bdc8">
+<img width="1677" alt="ProjectView2" src="https://github.com/user-attachments/assets/967804fa-01e4-4898-ad08-c34b8d0839f2">
+
+
+<h2>Installation</h2>
+<ol>
+<li><strong>Clone the repository:</strong></li>
+  
+```
+git clone https://github.com/FCimendere/ecommerce.git
+cd ecommerce
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<li><strong>Install dependencies:</strong></li>
+  
+```
+npm install
+```
+<li><strong>Configure environment variables:</strong> Create a .env file in the root directory and add your environment variables.</li>
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+NEXT_PUBLIC_SANITY_PROJECT_ID = your_sanity_project_id
+NEXT_PUBLIC_SANITY_DATASET = your_sanity_dataset
+SANITY_SECRET_TOKEN = your_sanity_secret_token
+STRIPE_SECRET_KEY = your_stripe_secret_key
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY = your_stripe_publisable_key
+```
+<li><strong>Run the application:</strong> Runs the app in the development mode.
+Open http://localhost:3000 to view it in your browser.</li>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```
+npm start
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<li><strong>Run the Backend- Sanity:</strong> Runs the app in the development mode.
+Open http://localhost:3333 to view it in your browser.</li>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```
+sanity start
+```
 
-## Learn More
+</ol>
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<p> Happy Surfing 🌟 </p>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
